@@ -8,7 +8,9 @@ const int HEIGHT = 800;
 class Star 
 {
     public:
-        float x, y, z;
+        float x;
+        float y;
+        float z;
 
         // Constructor
         Star () 
