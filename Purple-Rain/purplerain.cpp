@@ -8,12 +8,22 @@ const int HEIGHT = 800;
 class Drop 
 {
     public:
-        float x = rand() % WIDTH;
-        float y = -(rand() % HEIGHT);
-        float z = rand() % 20 + 1;
-        float len = map(z, 1, 20, 10, 20);
-        float thickness = map(z, 1, 20, 10, 20);
-        float speed = map(z, 1, 20, 1, 20);
+        float x;
+        float y;
+        float z;
+        float len;
+        float thickness;
+        float speed;
+
+        Drop ()
+        {
+            x = rand() % WIDTH;
+            y = -(rand() % HEIGHT);
+            z = rand() % 20 + 1;
+            len = map(z, 1, 20, 10, 20);
+            thickness = map(z, 1, 20, 10, 20);
+            speed = map(z, 1, 20, 1, 20);
+        }
 
         void fall ()
         {
@@ -45,6 +55,7 @@ class Drop
         }
 };
 
+
 int main ()
 {
     // Create window
@@ -53,7 +64,7 @@ int main ()
     // Create array of rain drops
     int num_drops = 1000;
     Drop drops[num_drops];
-    float speed = 1;
+    float speed = 0.5;
 
     // Draw loop
     while (window.isOpen())
