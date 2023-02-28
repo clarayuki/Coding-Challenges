@@ -19,9 +19,9 @@ class Star
         // Constructor
         Star () 
         {
-            x = std::rand()%(WIDTH * 2 + 1) - WIDTH;
-            y = std::rand()%(HEIGHT * 2 + 1) - HEIGHT;
-            z = std::rand()%(WIDTH * 2 + 1) - WIDTH;
+            x = std::rand() % (WIDTH * 2 + 1) - WIDTH;
+            y = std::rand() % (HEIGHT * 2 + 1) - HEIGHT;
+            z = std::rand() % (WIDTH * 2 + 1) - WIDTH;
         }
 
         void show (sf::RenderWindow& window)
@@ -41,8 +41,8 @@ class Star
             if (z < 1) 
             {
                 z = WIDTH;
-                x = std::rand()%(WIDTH * 2 + 1) - WIDTH;
-                y = std::rand()%(HEIGHT * 2 + 1) - HEIGHT;
+                x = std::rand() % (WIDTH * 2 + 1) - WIDTH;
+                y = std::rand() % (HEIGHT * 2 + 1) - HEIGHT;
             }
         }
 };
@@ -83,4 +83,6 @@ int main ()
         window.display();
 
     }
+
+    return 0;
 }
