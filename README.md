@@ -1,2 +1,2 @@
 # 👨‍💻 Coding-Challenges 
-A compilation of Daniel Shiffman's coding challenges translated to C++.
+This is an attempt of recreating Daniel Shiffman's coding challenges in C++
